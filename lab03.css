@@ -1,0 +1,170 @@
+.maintitle {grid-area: header;}
+.menu {grid-area: nav;}
+.login {grid-area: left;}
+.card1 {grid-area: main1;}
+.card2 {grid-area: main2;}
+.card3 {grid-area: main3;}
+.ad1 {grid-area: right1;}
+.ad2 {grid-area: right2;}
+.foot1 {grid-area: footer;}
+
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "left main1 right1"
+    "left main2 right2"
+    "left main3 ."
+    "footer footer footer";
+    /*grid-template-columns: 1fr, 4fr, 1fr;*/
+   
+    grid-gap: 10px;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 10px;
+    
+}
+.maintitle{
+    padding-left: 30px;
+    grid-column:1/6;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 10px;
+}
+
+.maintitle{
+    background-color: lightpink;
+}
+
+.menu{
+    list-style-type: none;
+    nav ul{
+        width: 100%;
+        background-color: violet;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+        top:0;
+    }
+    nav ul li{
+        display: inline-block;
+        text-decoration:none;
+       
+    }
+    .dropdown{
+        position: relative;
+    }
+    .dropdown-menu{
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .dropdown-content{
+        position:absolute;
+        background-color: pink;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .dropdown-content a{
+        color: yellowgreen;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content{
+        display:none;
+    }
+    .dropdown-menu:hover{
+        background-color:pink;
+        color: white;
+    }
+    .dropdown:hover .dropdown-content{
+        display:block;
+    }
+    .dropdown-content a:hover{background-color:papayawhip;}
+}
+
+.loginbox{
+
+    background-color: lightpink;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card1{
+
+    border: 1px solid rgb(158,155,155);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+    margin-bottom:20px;
+    border-radius: 10px;
+}
+.card2{
+    border: 1px solid rgb(158,155,155);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.card3{
+    border: 1px solid rgb(158,155,155);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+}
+
+.ad1{
+    border: 1px solid rgb(158,155,155);
+    border-radius: 10px;
+    background-color: lightyellow;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.ad2{
+    border: 1px solid rgb(158,155,155);
+    border-radius: 10px;
+    background-color: lightyellow;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.foot1{
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: lightpink;
+    
+    }
+    li {
+        float: center;
+        /*display: inline-block;*/
+     
+    }
+    li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: pink;
+
+    }
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>김서형</title>
+        <h1> 동아리 가입 양식 </h1>
+    </head>
+    <body>
+        <form>
+            <label for="이름"> 이름 </label>
+            <input type="text" id="이름" name="이름"><br/>
+            
+            <label for="학부/학과"> 학부/학과 </label>
+            <input list="학부/학과">
+            <datalist id="학부/학과">
+                <option value="소프트웨어전공">
+                <option value="수학과">
+                <option value="통계학과">
+                <option value="경제학부">
+            </datalist> <br/>
+           
+            <label for="학년"> 학년 </label>
+            <input type="radio" id="1학년" name="학년" value="1학년">
+            <label for="1학년"> 1학년 </label>
+            <input type="radio" id="2학년" name="학년" value="2학년">
+            <label for="2학년"> 2학년 </label>
+            <input type="radio" id="3학년" name="학년" value="3학년">
+            <label for="3학년"> 3학년 </label>
+            <input type="radio" id="4학년" name="학년" value="4학년">
+            <label for="4학년"> 4학년 </label> <br/>
+            
+            <label for="학번"> 학번 </label>
+            <input type="text" id="학번" name="학번"><br/>
+
+            <label for="이메일"> 이메일 </label>
+            <input type="text" id="이메일" name="이메일"></br>
+
+            <label for="전화번호"> 전화번호 </label>
+            <input type="text" id="전화번호" name="전화번호"></br>
+
+            <label for="가입동기"> 가입동기 </label>
+            <textarea id="가입동기" name="가입동기" rows="5" cols="30"></textarea> </br>
+
+        <button type="button"> 가입하기 </button>
+        <button type="button"> 취소하기 </button>
+
+        </form>
+    </body>
+</html>
